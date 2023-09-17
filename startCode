@@ -1,0 +1,6 @@
+# template for budgeting app
+
+import math
+
+salary = int(input("What is your projected salary for the year? "))
+schedule = input("How often do you get paid? ")

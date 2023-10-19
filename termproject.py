@@ -21,5 +21,5 @@ ftotal=(ctotal-132)
 if homeOwner=='yes' or 'Yes':
     ftotal=(ftotal-200)
 
-if ftotal<0:
+if fto
     print('Your final amount remaining after all expected expenses is',ftotal,'. You should kill yourself.')

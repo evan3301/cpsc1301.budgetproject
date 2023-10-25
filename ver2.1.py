@@ -5,7 +5,7 @@ class PersonalBudget:
     def __init__(self, spending_categories, tax_rates):
         # Initialize dictionary attributes
         self.spending_categories = spending_categories
-        self.tax_rates = tax_rates
+        self.tax_rates = {state.lower(): tax_rates for state, tax_rates in tax_rates.items()}
 
 
     def usrInput(self):
@@ -20,6 +20,8 @@ class PersonalBudget:
 
 
     def calcBudget(self, salary, state):
+        state = state.lower()
+        
         # If state input not found in stateTaxes dictionary
         if state not in self.tax_rates:
             raise ValueError('State not found')

@@ -10,7 +10,7 @@ class PersonalBudget:
 
     def usrInput(self):
         try:
-            salary = int(input('Enter you expected annual salary: $'))
+            salary = float(input('Enter you expected annual salary: $'))
             state = input('Enter your state: ')
             return salary, state
 
